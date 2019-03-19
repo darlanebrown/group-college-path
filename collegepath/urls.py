@@ -20,9 +20,18 @@ from cservices import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls, name='admin'),  #href="{{ url('admin') }}" For Darla's HTML tag
+    #path('AboutCP/', views.about),
+    #path('servicesCP/', views.services),
+    #path('admin_login/', views.ad),
+    #path('ContactCP/', admin.site.urls),
+    #path('cservices/model/', models.Application, name='Application'),
+
+
+    path('', views.homepage),
+    #path('submit-application/', views.view_form_page),
+    #href="{{ url('admin') }}" For Darla's HTML tag
 #    path('admin/', admin.site.urls),
-#    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
 ]
 
 # Boilerplate to include static files

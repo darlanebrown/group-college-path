@@ -2,6 +2,7 @@ from django.db import models
 from django import forms
 
 
+
 BEST_TIME= [
     ('morning before 10am', 'Morning before 10am'),
     ('morning after 10am', 'morning after 10am'),
@@ -16,7 +17,6 @@ class Application(models.Model):
     last_name = models.CharField(max_length=120)
     email = models.EmailField(max_length=120)
     phone = models.CharField(max_length=127)
-    education = models.CharField(max_length=127)
     education = models.CharField(max_length=127)
     username = models.CharField(max_length=127)
     password = models.CharField(max_length=127)
@@ -36,5 +36,5 @@ class Application(models.Model):
 #    def __str__(self):
 #        return () 
     
-class ApplicationTime(models.Model)    
-    best_time= forms.CharField(label='Prefered time frame?',    widget=forms.RadioSelect(choices=BEST_TIME))
+#class ApplicationTime(models.Model):    
+   # best_time= models.CharField(label='Prefered time frame?') #widget=models.RadioSelect(choices=BEST_TIME))

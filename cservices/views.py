@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django import forms
 
-from .models import Application
+
+from cservices.models import Application
 
 
-class NewApplicationForm(models.ModelForm):
+
+class NewApplicationForm(forms.ModelForm):
     class Meta:
         model = Application
         fields = [
@@ -12,13 +14,13 @@ class NewApplicationForm(models.ModelForm):
             'last_name',
             'email',
             'phone',
-            'educaton',
+            'education',
             'username',
             'password'
         ]
         
         
-class EditApplicationForm(models.ModelForm):
+class EditApplicationForm(forms.ModelForm):
     class Meta:
         model = Application
         fields = [
@@ -34,12 +36,12 @@ class EditApplicationForm(models.ModelForm):
 def homepage(request):
     if request.method == 'POST':
     
-     form = NewApplicationForm(request.POST)
+        form = NewApplicationForm(request.POST) 
 
         if form.is_valid():
             user = form.save()
 
-            # As soon as our new user is created, we make this user be
+            # As soon as our new user is  created, we make this user be
             # instantly "logged in".
             auth.login(request, user)
             return redirect('/')
@@ -51,7 +53,13 @@ def homepage(request):
     context = {
         'form': form,
     }
-    return render(request, 'pages/index.html', context)
+    # <form action=" THIS URL GOES HERE " method="POST">
+    #   {% csrf_token %}
+    #   {{ form.as_p }}
+    #   <button>Submit me!!!</button>
+    # </form>
+    
+    return render(request, 'templates/index.html', context)
 
 
 # team the pages below will be added after
