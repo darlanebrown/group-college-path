@@ -59,7 +59,7 @@ def homepage(request):
     #   <button>Submit me!!!</button>
     # </form>
     
-    return render(request, 'templates/index.html', context)
+    return render(request, 'index.html', context)
 
 
 # team the pages below will be added after

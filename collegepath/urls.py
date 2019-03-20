@@ -20,6 +20,7 @@ from cservices import views
 
 
 urlpatterns = [
+    path('', views.homepage),
     #path('AboutCP/', views.about),
     #path('servicesCP/', views.services),
     #path('admin_login/', views.ad),
