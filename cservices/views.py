@@ -83,11 +83,11 @@ def homepage(request):
 #        }
 #        return render(request, 'base.html', context)
 
-# def admin_login(request):
-#        context = {
-#            'admin_login',
-#        }
-#        return render(request, 'base.html', context)
+def admin_login(request):
+        context = {
+            'admin_login',
+        }
+        return render(request, 'base.html', context)
 
 # def contact(request):
 #        context = {

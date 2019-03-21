@@ -16,8 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from cservices import views
-from django.conf import settings
-from django.conf.urls.static import static
+
 
 
 
@@ -25,7 +24,7 @@ urlpatterns = [
     path('', views.homepage),
     #path('AboutCP/', views.about),
     #path('servicesCP/', views.services),
-    #path('admin_login/', views.ad),
+    path('AdminLogin/', views.admin_login),
     #path('ContactCP/', admin.site.urls),
     #path('cservices/model/', models.Application, name='Application'),
 
