@@ -31,9 +31,11 @@ class EditApplicationForm(forms.ModelForm):
             'education',
             'username',
             'password'
-        ]        
+        ]
+        
 
-def homepage(request):
+
+def formpage(request):
     if request.method == 'POST':
     
         form = NewApplicationForm(request.POST) 
@@ -44,7 +46,7 @@ def homepage(request):
             # As soon as our new user is  created, we make this user be
             # instantly "logged in".
             auth.login(request, user)
-            return redirect('/')
+            return redirect("/")
 
     else:
         # if a GET we'll create a blank form
@@ -53,23 +55,18 @@ def homepage(request):
     context = {
         'form': form,
     }
-    # <form action=" THIS URL GOES HERE " method="POST">
-    #   {% csrf_token %}
-    #   {{ form.as_p }}
-    #   <button>Submit me!!!</button>
-    # </form>
     
-    return render(request, 'index.html', context)
+   
+    return render(request, 'form.html', context)
 
 
 # team the pages below will be added after
 
 
-# def homepage(request):
-#        context = {
-#            'homepage',
-#        }
-#        return render(request, 'base.html', context)
+def homepage(request):
+    context = {
+    }
+    return render(request, 'index.html', context)
 
 # def about(request):
 #        context = {
@@ -77,17 +74,17 @@ def homepage(request):
 #        }
 #        return render(request, 'base.html', context)
 
-# def services(request):
-#        context = {
-#            'services',
-#        }
-#        return render(request, 'base.html', context)
+#def services(request):
+        #context = {
+            #'services',
+        #}
+        #return render(request, 'base.html', context)
 
-def admin_login(request):
-        context = {
-            'admin_login',
-        }
-        return render(request, 'base.html', context)
+#def admin_login(request):
+        #context = {
+            #'admin_login',
+        #}
+        #return render(request, 'base.html', context)
 
 # def contact(request):
 #        context = {

@@ -1,0 +1,14 @@
+
+<title>Meet a Counselor</title>
+<center>
+<h3> To begin an appointment with a Counselor, fill-out the form below:</h3>
+
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+       <button>Submit me!!</button>
+    </form>
+</center>
+
+
+

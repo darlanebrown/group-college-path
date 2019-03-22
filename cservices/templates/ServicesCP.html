@@ -35,8 +35,8 @@
             </div>
 {% endblock content %}           
 
-<form action=" THIS URL GOES HERE " method="POST">
-{% csrf_token %}
-{{ form.as_p }}
-<button>Submit me!!!</button>
+<form action=" form" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit me!!!</button>
 </form>

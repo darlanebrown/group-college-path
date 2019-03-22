@@ -23,13 +23,13 @@ from cservices import views
 urlpatterns = [
     path('', views.homepage),
     #path('AboutCP/', views.about),
-    #path('servicesCP/', views.services),
-    path('AdminLogin/', views.admin_login),
+    path('form/', views.formpage, name="form"),
+    #path('AdminLogin/', views.admin_login),
     #path('ContactCP/', admin.site.urls),
     #path('cservices/model/', models.Application, name='Application'),
 
 
-    path('', views.homepage),
+    #path('', views.homepage),
     #path('submit-application/', views.view_form_page),
     #href="{{ url('admin') }}" For Darla's HTML tag
 #    path('admin/', admin.site.urls),
