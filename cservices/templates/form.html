@@ -1,7 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: url("/static/img/class.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 40% 40%; 
+}
+div {
+  background-color:white;
+  padding: 20px;
+  width: 550px;
+  border: 25px solid black;
+  
+}
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+</style>
+</head>
+<body>
 
 <title>Meet a Counselor</title>
 <center>
-<h3> To begin an appointment with a Counselor, fill-out the form below:</h3>
+<div><h3>To begin an appointment with a Counselor, fill-out the form below:</h3></d>
 
     <form action="." method="POST">
         {% csrf_token %}
@@ -9,6 +33,7 @@
        <button>Submit me!!</button>
     </form>
 </center>
-
+</body>
+</html>
 
 
