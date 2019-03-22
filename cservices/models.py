@@ -17,14 +17,9 @@ class Application(models.Model):
     last_name = models.CharField(max_length=120)
     email = models.EmailField(max_length=120)
     phone = models.CharField(max_length=127)
-    education = models.CharField(max_length=127)
-    username = models.CharField(max_length=127)
-    password = models.CharField(max_length=127)
-
-
-
-
-
+    current_education = models.CharField(max_length=127)
+    desired_interest  = models.CharField(max_length=127)
+    desired_major = models.CharField(max_length=127)
 
 
 
@@ -40,8 +35,9 @@ class Application(models.Model):
 #        return gravatar_url    
 
 # check admin panel to see how information is ported over.
-#    def __str__(self):
+#   def __str__(self):
 #        return () 
     
 #class ApplicationTime(models.Model):    
-   # best_time= models.CharField(label='Prefered time frame?') #widget=models.RadioSelect(choices=BEST_TIME))
+#   best_time = models.CharField(label='Prefered time frame?') 
+#   widget = models.RadioSelect(choices=BEST_TIME)
