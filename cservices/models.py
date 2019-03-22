@@ -1,7 +1,7 @@
 from django.db import models
 from django import forms
 
-
+import hashlib
 
 BEST_TIME= [
     ('morning before 10am', 'Morning before 10am'),
@@ -20,6 +20,13 @@ class Application(models.Model):
     education = models.CharField(max_length=127)
     username = models.CharField(max_length=127)
     password = models.CharField(max_length=127)
+
+
+
+
+
+
+
 
 
 # we could add 

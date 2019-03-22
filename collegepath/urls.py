@@ -33,7 +33,7 @@ urlpatterns = [
     #path('submit-application/', views.view_form_page),
     #href="{{ url('admin') }}" For Darla's HTML tag
 #    path('admin/', admin.site.urls),
-    #path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
 
 # Boilerplate to include static files

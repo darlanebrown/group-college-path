@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django import forms
+from django.contrib.auth.models import User
+from django.contrib import auth
+
 
 
 from cservices.models import Application
@@ -45,8 +48,8 @@ def formpage(request):
 
             # As soon as our new user is  created, we make this user be
             # instantly "logged in".
-            auth.login(request, user)
-            return redirect("/")
+            #auth.login(request, user)
+            return redirect('/')
 
     else:
         # if a GET we'll create a blank form
