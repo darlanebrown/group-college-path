@@ -34,7 +34,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">STUDENTS STEPS TO SUCCEED</a>
+      <a class="navbar-brand js-scroll-trigger" href="#about">STUDENTS STEPS TO SUCCEED</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,7 +47,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Admin login</a>
+            <a class="nav-link js-scroll-trigger" href="#counselor">Admin login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -67,7 +67,7 @@
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">First step before,meeting a counselor.Saving time by creating a profile of your needs. Then second steps is to make appointment with your school counselor. This is important step before registering for classes. </p>
+          <p class="text-white-75 font-weight-light mb-5">Our mission is to provide services to new and continuing studetns to be able to see a counselor and discuss class, time-management, financial aid concerns.</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Begin the process</a>
         </div>
       </div>
@@ -81,7 +81,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">College Path Services</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Student will fill out a profile. Then make a appointment with the counselor on the site, to go over your schedule. This will save time, by taking away the pre 15 minutes counseling service. And giving the counselor more one on one with the students. </p>
+          <p class="text-white-50 mb-4">You will begin by filling out the following form that will be submitted to a counselor. Then you will make an appointment through our interactive calendar. This will save time, by taking away the pre 30 minutes counseling service and ample 1 on 1 time with the counselor. </p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="{% url 'form' %}">Get Started!</a>
           </div>
       </div>
@@ -97,22 +97,22 @@
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">SCHOOL/EDUCATION</h3>
-            <p class="text-muted mb-0">GED, High school grad, some college, no school</p>
+            <h3 class="h4 mb-2">SCHOOL or EDUCATION</h3>
+            <p class="text-muted mb-0">Whether you have completed a GED, High school grad, 2-year college, 4-year college, trade or vocational we can help provide you a guide to continue your education</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
             <h3 class="h4 mb-2">INTERESTS</h3>
-            <p class="text-muted mb-0">Nursing, Computer Science, Teaching, Social work, Auto mechanic, Beautician, Culinary, Business Administration, Accounting, Art, Photography, Data Entry, IT</p>
+            <p class="text-muted mb-0">Available, but not limited to subjects Nursing, Computer Science, Teaching, Social work, Auto-mechanic, Beautician, Culinary, Business Administration, Accounting, Art, Photography, Data Entry, IT & many more</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-globe text-primary mb-4"></i>
             <h3 class="h4 mb-2">MAJOR</h3>
-            <p class="text-muted mb-0">2 years degree, AA, AS, Transfer to 4 year to university, Certificate, Trade</p>
+            <p class="text-muted mb-0">Degree path services for AA, AS, 2-year college, 4-year college/university, Transfer students, certificate, trade or vocational</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
@@ -126,7 +126,7 @@
     </div>
   </section>
 
-  <!-- Admin-Login Section -->
+  <!-- Image Section -->
   <section id="login">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
@@ -137,8 +137,8 @@
           <a class="portfolio-box" href="{% static "img/portfolio/fullsize/1.jpg" %}">
            <img class="img-fluid" src="{% static "img/portfolio/thumbnails/1.jpg" %}" alt="">
             <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
+              <div class="project-category text-black-50">
+              Push Yourself because No One Else Will
               </div>
               <div class="project-name">
                 
@@ -168,7 +168,6 @@
             <img class="img-fluid" src="{% static "img/portfolio/thumbnails/3.jpg" %}" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
               </div>
               <div class="project-name">
                 
@@ -180,8 +179,8 @@
           <a class="portfolio-box" href="{% static "img/portfolio/fullsize/4.jpg" %}">
             <img class="img-fluid" src="{% static "img/portfolio/thumbnails/4.jpg" %}" alt="">
             <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
+              <div class="project-category text-black-50">
+              A Little Progess Each Day Adds Up To BIG Results
               </div>
               <div class="project-name">
                 
@@ -192,24 +191,14 @@
   </section>
        
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
+<!-- Django Admin Login to view submitted applications/forms -->
+  <!-- Counselor Login -->
+  <section class="page-section bg-dark text-white" id='counselor'>
     <div class="container text-center">
       <h2 class="mb-4">Counselor Login</h2>
-      <a class="btn btn-light btn-xl" href="https://url.">Sign-In</a>
+      <a class="btn btn-light btn-xl" href="/admin/">Begin Session</a>
     </div> 
    
-    
   </section>
 
   <!-- Contact Section -->
@@ -225,12 +214,12 @@
       <div class="row">
         <div class="col-lg-4 ml-auto text-center">
           <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>(800)222-2222</div>
+          <div>(510) 201.1701</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
           <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">info@college.com</a>
+          <a class="d-block" href="michaelb@kickstartcoding.com">info@collegepathservices.com</a>
         </div>
       </div>
     </div>
@@ -239,7 +228,7 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+      <div class="small text-center text-muted">Page editied by Nadia, Darla, and Tam ~ Copyright &copy; 2019 - Start Bootstrap</div>
     </div>
   </footer>
 
