@@ -52,8 +52,7 @@ def formpage(request):
             
             user = form.save()
 
-            # As soon as our new user is  created, we make this user be
-            # instantly "logged in".
+      # once submittee clicks on the button to continue they will redircted to the the calendly link to schedule an appointment.
             #auth.login(request, user)
             return redirect('https://calendly.com/nadiabc/collegepath')
 
@@ -69,15 +68,15 @@ def formpage(request):
     return render(request, 'form.html', context)
 
 #admin/counselor should login here
-#def employees_only(request):
+#def counselors(request):
 
     # Check if the user is logged in.
-#    if not request.user.is_authenticated:
+#   if not request.user.is_authenticated:
 
         # Use Django's built-in "messages" system to us send the user a message
         # that appears on whatever next page they visit (but goes away when
         # they go to a new page)
-#        messages.warning(request, "You need to log in to view Employee's Only")
+#        messages.warning(request, "You need to log in to view Counselor dashboard")
 #        return redirect('/')
 
 #    all_users = User.objects.all()
@@ -101,23 +100,4 @@ def homepage(request):
 #            'about',
 #        }
 #        return render(request, 'base.html', context)
-
-#def services(request):
-        #context = {
-            #'services',
-        #}
-        #return render(request, 'base.html', context)
-
-#def admin_login(request):
-        #context = {
-            #'admin_login',
-        #}
-        #return render(request, 'base.html', context)
-
-# def contact(request):
-#        context = {
-#            'contact',
-#        }
-#        return render(request, 'base.html', context)
-
 
