@@ -26,7 +26,7 @@ pip install gunicorn
 pip freeze > requirements
 ```
 5. Create runtime.txt
-Railway needs to know the version of python you used for your project, to know the version used type `python --version` in your terminal copy, paste and save the version inside your runtime.txt `python -3.8.10`
+Railway needs to know the version of python you used for your project, to know the version used type `python --version` in your terminal copy, paste and save the version inside your runtime.txt `python -3.10.6`
 6. Next, we need to make some adjustments to our settings.py file
 Look for the line that has
 ```
