@@ -122,3 +122,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-d7d1.up.railway.app', 'http://web-production-d7d1.up.railway.app']
